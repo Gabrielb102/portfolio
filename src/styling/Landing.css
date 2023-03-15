@@ -1,24 +1,62 @@
 #Landing {
+    position: relative;
     padding: 50px;
     text-align: left;
+    height: 490px;
 }
 
 #Landing-name {
-    color: white;
+    /* color: rgb(230, 100, 100); */
+    display: block;
+    color: rgb(0,0,0);
     font-size: 70px;
+    margin-top: 0px;
     margin-bottom: -30px;
 }
 
 #Landing-title {
-    color: white;
+    display: block;
+    color: rgb(50, 100, 200);
     font-size: 30px;
     margin-bottom: 0px;
     padding-left: 10px;
 }
 
 #Landing-bio {
-    color: white;
+    /* color:rgb(230, 100, 100); */
+    color: none;
+    mix-blend-mode: difference;
     padding-left: 10px;
     margin-bottom: 0px;
     width: 500px;
+}
+
+#Landing-button {
+    position: relative;
+    border-width: 0px;
+    background: none;
+    padding: 0px;
+    left: 80%;
+    top: -40px;
+}
+
+#Landing-button img {
+    height: 90px;
+    width: 70px;
+    padding: 0;
+    background: white;
+    border: none;
+    transition: 50ms ease-in-out;
+}
+
+#Landing-button:hover > img {
+    scale: 1.05;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);;
+}
+
+#Landing-resume iframe {
+    height: 900px;
+    width: 700px;
+    border: 0px;
+    scale: .5;
 }
