@@ -8,6 +8,12 @@
     height: 400px;
     width: 300px;
     margin: 20px;
+    transition: ease-in-out 150ms;
+}
+
+.Project:hover {
+    background-color: white;
+    scale: 1.1;
 }
 
 .Project-image {

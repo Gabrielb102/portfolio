@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './styling/Project.css';
 // const pc = {
 //     title : 'Poll-itically Correct',
@@ -7,14 +8,34 @@ import './styling/Project.css';
 //     gitHubUrl : 'https://github.com/gabrielb102/pollitically-correct'
 // }
 
-function Project(proj) {
-    console.log("proj: ", proj);
-    return (
-        <div className='Project'>
-            <h3 className='Project-title'> { proj.proj.title }</h3>
-            <img className='Project-image' src={proj.proj.thumbnailUrl}/>
-            <p className='Project-short'>{ proj.proj.short }</p>
+function Project({ proj }) {
+
+    let long;
+
+    let short = (    
+        <div className='Project' onClick={() => setContent(long)}>
+            <h3 className='Project-title'> { proj.title }</h3>
+            <img className='Project-image' src={proj.thumbnailUrl}/>
+            <p className='Project-short'>{ proj.short }</p>
         </div>
+    );
+
+    long = (
+        <div className='Project expanded' onClick={() => setContent(short)}>
+            <h3 className='Project-title'> { proj.title }</h3>
+            <img className='Project-image large' src={proj.thumbnailUrl}/>
+            <p className='Project-long'>{ proj.long }</p>
+            <a href={ proj.gitHubUrl }>GitHub</a>
+        </div>
+    )
+
+    const [content, setContent] = useState(short);
+
+
+    return (
+        <>
+        { content }
+        </>
     );
 }
 

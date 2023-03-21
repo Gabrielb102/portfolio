@@ -1,16 +1,22 @@
 #Landing {
     position: relative;
+    display: flex;
     padding: 50px;
     text-align: left;
     height: 490px;
+}
+
+#Landing-info {
+    flex: 1;
 }
 
 #Landing-name {
     /* color: rgb(230, 100, 100); */
     display: block;
     color: rgb(0,0,0);
-    font-size: 70px;
-    margin-top: 0px;
+    font-size: 60px;
+    margin-left: 10%;
+    margin-top: 30%;
     margin-bottom: -30px;
 }
 
@@ -19,6 +25,7 @@
     color: rgb(50, 100, 200);
     font-size: 30px;
     margin-bottom: 0px;
+    margin-left: 10%;
     padding-left: 10px;
 }
 
@@ -36,8 +43,8 @@
     border-width: 0px;
     background: none;
     padding: 0px;
-    left: 80%;
-    top: -40px;
+    top: 30%;
+    left: 30%;
 }
 
 #Landing-button img {
@@ -46,7 +53,7 @@
     padding: 0;
     background: white;
     border: none;
-    transition: 50ms ease-in-out;
+    transition: 150ms ease-in-out;
 }
 
 #Landing-button:hover > img {
@@ -54,9 +61,45 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);;
 }
 
+#Landing-resume {
+    flex: 1;
+    height: 500px;
+    overflow: hidden;
+}
+
 #Landing-resume iframe {
-    height: 900px;
-    width: 700px;
+    position: relative;
+    height: 825px;
+    width: 690px;
     border: 0px;
     scale: .5;
+    zoom: 1.2;
+    top: -200px;
+    right: 150px;
+}
+
+#Landing-res-buttons > * {
+    display: inline;
+    position: relative;
+    width: 50px;
+    background-color: rgb(160, 220, 245);
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300;   
+    text-decoration: none;
+    border: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    left: 33%;
+    margin-left: 6px;
+}
+
+#Landing-res-buttons > *:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 100ms;
 }

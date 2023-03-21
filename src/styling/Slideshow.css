@@ -1,6 +1,10 @@
 #Slideshow {
-    height: 500px;
-    border: solid;
-    border-width: 5px;
-    border-color: white;
+    padding-top: 50px;
+}
+
+#Slideshow h2 {
+    position: relative;
+    top: 30px;
+    color: aliceblue;
+    font-size: 45px;
 }

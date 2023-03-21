@@ -18,8 +18,9 @@
     margin: 5px;
     padding: 5px;
     cursor: pointer;
-    color: red;
+    color: black;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     border-radius: 5px;
 }
 
