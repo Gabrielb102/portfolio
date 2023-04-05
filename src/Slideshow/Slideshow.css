@@ -1,0 +1,40 @@
+#Slideshow {
+    padding-top: 20px;
+}
+
+#Slideshow h2 {
+    position: relative;
+    top: 30px;
+    color: aliceblue;
+    font-size: 45px;
+}
+
+.Slideshow-arrow {
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.Slideshow-arrow:hover {
+    color: #f1f1f1;
+    scale: 1.2;
+}
+
+.Slideshow-container {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: auto;
+    width: 90%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}

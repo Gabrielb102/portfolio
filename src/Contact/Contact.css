@@ -1,0 +1,83 @@
+#Contact {
+    padding: 50px;
+    margin: 0 auto;
+}
+
+#Contact h2 {
+    color: aliceblue;
+    text-align: left;
+}
+
+#Contact-info {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#Contact-message {
+    flex: 1.618;
+    margin-left: 10px;
+}
+
+#Contact-message textarea {
+    width: 96%;
+    height: 100px;
+    margin-right: 0px;
+}
+
+#Contact-message input {
+    display: block;
+}
+
+#Contact form {
+    display: flex;
+    border-style: solid;
+    width: 500px;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 13px;
+    background-color: rgb(255, 255, 255, .80);
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 20px 25px 20px 25px;
+}
+
+.Contact-input {
+    display: inline-block;
+    height: 25px;
+    width: 180px;
+    margin-right: 20px;
+    margin: 5px 0px 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: white;
+    padding-left: 5px;
+    border: solid;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.Contact-label {
+    text-align: left;
+    margin-left: 0px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Contact-submit {
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    height: 25px;
+    padding: 3px;
+    border: none;
+    border-color: none;
+    border-width: 0px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    transition: ease-in-out 100ms;
+}
+
+#Contact-submit:hover {
+    background-color: black;
+    color: white;
+}

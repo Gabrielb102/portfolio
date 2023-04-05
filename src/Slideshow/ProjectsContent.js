@@ -1,6 +1,6 @@
-import pcThumbnail from './static/PC-thumbnail.png';
-import cotThumbnail from './static/COT-thumbnail.png';
-import rjThumbnail from './static/RJ-thumbnail.png';
+import pcThumbnail from '../static/PC-thumbnail.png';
+import cotThumbnail from '../static/COT-thumbnail.png';
+import rjThumbnail from '../static/RJ-thumbnail.png';
 
 const pcShort = "A web app written in Node.js and React that reveals the top donors to American political campaigns.";
 const pcLong = `
@@ -56,4 +56,13 @@ const rand = {
     gitHubUrl : 'https://github.com/gabrielb102/crime-over-time'
 }
 
-export {pc, cot, rand};
+const doub = {
+    title : 'Jobly',
+    thumbnailUrl : rjThumbnail ,
+    short : rjShort,
+    long : rjLong,
+    gitHubUrl : 'https://github.com/gabrielb102/crime-over-time'
+}
+
+const projects = [pc, cot, rand, doub];
+export { projects };

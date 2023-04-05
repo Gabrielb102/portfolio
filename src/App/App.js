@@ -1,10 +1,10 @@
-import './styling/App.css';
-import './styling/NavBar.css';
-import Landing from './Landing';
-import Slideshow from './Slideshow';
-import Skills from './Skills';
-import About from './About';
-import Contact from './Contact';
+import './App.css';
+import '../Landing Page/NavBar.css';
+import Landing from '../Landing Page/Landing';
+import Slideshow from '../Slideshow/Slideshow';
+import Skills from '../Skills/Skills';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
 import { useRef } from 'react';
 import { scrollDown } from './helpers';
 

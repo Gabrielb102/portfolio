@@ -1,4 +1,4 @@
-import './styling/Contact.css';
+import './Contact.css';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -31,7 +31,7 @@ const Contact = () => {
         <div id='Contact-message'>
           <label className='Contact-label'>What's Up?</label>
           <textarea className='Contact-input' name="message" />
-          <input type="submit" value="Send Message!" />
+          <input id='Contact-submit' type="submit" value="Send Message!" />
         </div>
       </form>
     </div>

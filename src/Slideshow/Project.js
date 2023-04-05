@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styling/Project.css';
+import './Project.css';
 // const pc = {
 //     title : 'Poll-itically Correct',
 //     thumbnailUrl : './static/PC-thumbnail.png' ,

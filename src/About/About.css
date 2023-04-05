@@ -1,0 +1,65 @@
+#About {
+    padding: 50px;
+}
+
+#About h2 {
+    margin-bottom: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.About {
+    background-color: rgb(255, 255, 255, 0.1);
+    border : solid;
+    border-color: none;
+    border-width: 0px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 16px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.About h4 {
+    color: white;
+    margin-bottom: 0px;
+}
+
+.About p {
+    font-size: 17.2px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 300;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 12.3px;
+    margin-bottom: 0px;
+    transition: ease-in-out 300ms;
+}
+
+.About p:hover {
+    background-color: white;
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.bio {
+    flex: 1.618;
+}
+
+.me {
+    flex: 1;
+    padding: 10px;
+}
+
+.About img {
+    width: 100%;
+    border-radius: 12.36px;
+    transition: ease-in-out 300ms;
+}

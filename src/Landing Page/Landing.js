@@ -1,5 +1,5 @@
-import './styling/Landing.css';
-import ResThumbnail from './static/ResThumbnail.png';
+import './Landing.css';
+import ResThumbnail from '../static/ResThumbnail.png';
 import { useState } from 'react';
 
 function Landing() {

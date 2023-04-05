@@ -1,6 +1,6 @@
 import './styling/NavBar.css';
-import { scrollDown } from './helpers';
-import Slideshow from './Slideshow';
+import { scrollDown } from '../App/helpers';
+import Slideshow from '../Slideshow/Slideshow';
 
 function NavBar() {
   return (
