@@ -1,0 +1,11 @@
+.small {
+  width: 300px;
+  height: 400px;
+  transition: ease-in-out 0.5s;
+}
+
+.large {
+  width: 600px;
+  height: 800px;
+  transition: ease-in-out 0.5s;
+}

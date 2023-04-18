@@ -6,7 +6,8 @@ function Slideshow() {
     const projComps = [];
 
     for (let i = 0; i < projects.length; i++) {
-        projComps.push(<div className='carousel-item p-4'><Project key={uuidv4()} proj={projects[i]} /></div>);
+        const id = `p${i}`;
+        projComps.push(<div className='carousel-item p-4'><Project key={uuidv4()} proj={projects[i]} pid={id} /></div>);
     }
     
     return (
