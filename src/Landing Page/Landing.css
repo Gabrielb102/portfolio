@@ -1,4 +1,4 @@
-#Landing {
+/* #Landing {
     position: relative;
     display: flex;
     padding: 50px;
@@ -11,7 +11,6 @@
 }
 
 #Landing-name {
-    /* color: rgb(230, 100, 100); */
     display: block;
     color: rgb(0,0,0);
     font-size: 60px;
@@ -30,7 +29,6 @@
 }
 
 #Landing-bio {
-    /* color:rgb(230, 100, 100); */
     color: none;
     mix-blend-mode: difference;
     padding-left: 10px;
@@ -102,4 +100,4 @@
     background-color: black;
     color: white;
     transition-duration: 100ms;
-}
+} */

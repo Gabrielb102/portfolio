@@ -1,11 +1,11 @@
 import './About.css'
-import img from '../static/Me in scrubs.png'
+import img from '../static/Turtleneck-blue.png'
 import ReactMarkdown from 'react-markdown';
 
 function About() {
     return (
-        <div id="About">
-            <h2>ABOUT</h2>
+        <div className='pt-32 m-8'>
+            <h2 className='ml-8'>ABOUT</h2>
             <div className='flex'>
                 <div className='About bio'>
                     <ReactMarkdown>#### Motivation</ReactMarkdown>

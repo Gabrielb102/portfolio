@@ -1,7 +1,8 @@
 
 
-.App {
-  text-align: center;
+.background {
+  background-color: lightgray;
+  background-size: cover;
 }
 
 h2 {
@@ -10,8 +11,6 @@ h2 {
 }
 
 body {
-  background-color: black;
+  background-color: none;
   color: black;
-  background: url('../static/pexels-abby-kihano-226366.jpg');
-  background-size: cover;
 }

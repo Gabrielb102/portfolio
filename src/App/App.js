@@ -1,5 +1,4 @@
 import './App.css';
-import '../Landing Page/NavBar.css';
 import Landing from '../Landing Page/Landing';
 import Slideshow from '../Slideshow/Slideshow';
 import Skills from '../Skills/Skills';
@@ -16,19 +15,19 @@ function App() {
   const contactSection = useRef(null);
 
   return (
-    <div className="App">
-      <div ref={landingSection}><Landing /></div>
-      <nav id="NavBar">
-        <button onClick={() => scrollDown(landingSection)}>LANDING PAGE</button>
-        <button onClick={() => scrollDown(projectsSection)}>PROJECTS</button>
-        <button onClick={() => scrollDown(skillsSection)}>SKILLS</button>
-        <button onClick={() => scrollDown(aboutSection)}>ABOUT</button>
-        <button onClick={() => scrollDown(contactSection)}>CONTACT</button>
-      </nav>
-      <div ref={projectsSection}><Slideshow /></div>
-      <div ref={skillsSection}><Skills /></div>
-      <div ref={aboutSection}><About /></div>
-      <div ref={contactSection}><Contact /></div>
+    <div className='background'>
+      <div className='foreground h-[485px]' ref={landingSection}><Landing /></div>
+        <nav className='foreground navbar-center sticky top-12 z-10 bg-white p-1 mx-24 mt-20 rounded-lg'>
+          <button className='btn btn-sm btn-ghost mx-1 active:bg-primary font-light' onClick={() => scrollDown(landingSection)}>LANDING PAGE</button>
+          <button className='btn btn-sm btn-ghost mx-1 active:bg-primary font-light' onClick={() => scrollDown(projectsSection)}>PROJECTS</button>
+          <button className='btn btn-sm btn-ghost mx-1 active:bg-primary font-light' onClick={() => scrollDown(skillsSection)}>SKILLS</button>
+          <button className='btn btn-sm btn-ghost mx-1 active:bg-primary font-light' onClick={() => scrollDown(aboutSection)}>ABOUT</button>
+          <button className='btn btn-sm btn-ghost mx-1 active:bg-primary font-light' onClick={() => scrollDown(contactSection)}>CONTACT</button>
+        </nav>
+      <div className='foreground' ref={projectsSection}><Slideshow /></div>
+      <div className='foreground' ref={skillsSection}><Skills /></div>
+      <div className='foreground' ref={aboutSection}><About /></div>
+      <div className='foreground' ref={contactSection}><Contact /></div>
     </div>
   );
 }
