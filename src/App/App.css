@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior: smooth;
+}
 
 .background {
   background-color: lightgray;
@@ -7,10 +10,41 @@
 
 h2 {
   font-size: 45px;
-  color: aliceblue;
+  color: black;
 }
 
 body {
   background-color: none;
   color: black;
 }
+
+#Landing  {
+  background-color: #989898;
+  box-shadow: inset 34px -54px 40px lightgray;
+
+}
+
+.carousel {
+  background: lightgray;
+  box-shadow: inset 34px 34px 70px #989898,
+              inset -34px -34px 70px #ffffff;
+  }
+
+.skills {
+  background: lightgray;
+  box-shadow:  6px 6px 20px #949494,
+              -6px -6px 20px #ffffff;
+  transition: ease-in-out .3;  
+}
+
+.skills:hover {
+  background: lightgray;
+  box-shadow:  3px 3px 8px #949494,
+              -3px -3px 8px #ffffff;
+}
+
+#Contact {
+  background: #e0e0e0;
+  box-shadow:  23px 23px 45px #bebebe,
+               -23px -23px 45px #ffffff;
+              }

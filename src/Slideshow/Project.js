@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Project.css';
 // const pc = {
 //     title : 'Poll-itically Correct',
@@ -9,57 +8,29 @@ import './Project.css';
 // }
 
 const Project = ({ proj, pid }) => {
-  console.log('pid: ', pid);
 
-
-
-  const switchModes = (mode, pid) => {
+  const switchModes = (pid) => {
     const card = document.querySelector(`#${pid}`)
+    const existingLarges = document.querySelectorAll('.large')
+    for (let biggie of existingLarges) {
+      if (biggie !== card) {
+        biggie.classList.toggle('small')
+        biggie.classList.toggle('large')
+      }
+    }
     card.classList.toggle('small')
     card.classList.toggle('large')
-    setContent(mode);
-
   }
 
-  let long;
-
-  let short = (    
-      <>
-          <figure>
-              <img src={proj.thumbnailUrl} alt=''/>
-          </figure>
-          <div className='card-body'>
-              <h3 className='card-title'> { proj.title }</h3>
-              <p className='card-text'>{ proj.short }</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-sm btn-primary" onClick={() => switchModes(long, pid)}>👀</button>
-              </div>
-          </div>
-      </>
-  );
-
-  long = (
-      <>
-        <figure>
-          <img src={proj.thumbnailUrl} alt=''/>
-        </figure>
-        <div className='card-body'>
-          <h3 className='card-title'> { proj.title }</h3>
-          <p>{ proj.long }</p>
-          <a href={ proj.gitHubUrl }>GitHub</a>
-          <div className="card-actions justify-end">
-            <button className="btn btn-sm btn-primary" onClick={() => switchModes(short, pid)}>close</button>
-          </div>
-        </div>
-      </>
-  )
-
-  const [content, setContent] = useState(short);
-
-
   return (
-    <div id={pid} className='card-normal w-80 h-96 max-h-96 bg-base-100 shadow-xl ease-in-out small'>
-      { content }
+    <div id={pid} onClick={() => switchModes(pid)} className='card-normal w-80 h-[400px] bg-white/[.7] shadow-xl ease-in-out duration-300 hover:cursor-pointer small'>
+      <figure>
+        <img src={proj.thumbnailUrl} alt=''/>
+      </figure>
+      <div className='card-body relative'>
+          <h3 className='card-title'> { proj.title }</h3>
+          <p className='card-text font-light text-ellipsis overflow-hidden ...'>{ proj.long }</p>
+      </div>
     </div>
   );
 }

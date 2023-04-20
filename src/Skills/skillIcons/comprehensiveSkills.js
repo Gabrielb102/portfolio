@@ -1,0 +1,17 @@
+import javasript from './js-icon.png'
+import react from './react-icon.png'
+import node from './node-icon.png'
+import python from './python-icon.png'
+import express from './express-icon.png'
+import flask from './flask-icon.png'
+import html from './html-icon.png'
+import css from './css-icon.png'
+import postgresql from './postgresql-icon.png'
+import jwt from './jwt-icon.png'
+import bcrypt from './bcrypt-icon.png'
+import leaflet from './leaflet-icon.png'
+import d3 from './d3-icon.png'
+import redis from './redis-icon.png'
+import sequelize from './sequelize-icon.png'
+
+export { javasript, react, python, node, express, flask, html, css, postgresql, bcrypt, jwt, sequelize, leaflet, d3, redis }

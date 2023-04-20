@@ -12,8 +12,8 @@ function Slideshow() {
     
     return (
         <div className='pt-24'>
-            <h2 className='text-center'>PROJECTS</h2>
-            <div className='carousel'>{projComps}</div>
+            <h2 className='text-center font-thin'>PROJECTS</h2>
+            <div className='carousel carousel-center small-carousel overflow-y-visible h-fit py-4'>{projComps}</div>
         </div>
     );
 }

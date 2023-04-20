@@ -1,44 +1,26 @@
-import './Landing.css';
-import ResThumbnail from '../static/ResThumbnail.png';
-import { useState } from 'react';
+import SkillIcon from '../Skills/SkillIcon';
+import me from '../static/floating-coffee.png';
+import { javasript, react, python, node, postgresql } from '../Skills/skillIcons/comprehensiveSkills';
+
+const skills = [javasript, react, python, node, postgresql];
 
 function Landing() {
 
-  let resume;
-
-  const button = (
-    <button onClick={() => setRes(resume)}>
-      <div className='card w-36 text-center bg-accent align-middle'>
-        <figure ><img src={ ResThumbnail } alt=''/></figure>
-        <div className='card-body p-0'>
-          <h4 className='card-text'>Preview Resume</h4>
-        </div>
-      </div>
-    </button>);
-
-  resume = (
-    <>
-      <div className='m4 duration-150'>
-        <a className='btn btn-sm m-4 font-light' href='https://docs.google.com/document/d/19aQs8I04aUz4b3eaeNlMkGxtdeboOifgQ4GoqdUqW3w/export?format=pdf'>DOWNLOAD</a>
-        <button className='btn btn-sm font-light' onClick={() => setRes(button)}>CLOSE</button>
-      </div>
-      <iframe title='Resume' src={ process.env.PUBLIC_URL + '/Burgos\ Resume\ SWE\ 2023.pdf#toolbar=0&navpanes=0&scrollbar=0'}></iframe>
-    </>
-  );
-
-  const [res, setRes] = useState(button);
-
   return (
-    <div className='flex p-24 h-full'>
-        <div className='basis-128'>
-          <h1 className='text-7xl font-thin'>Gabriel Burgos</h1>
-          <h4 className='text-2xl'>Full-Stack Developer</h4>
+    <div id='Landing' className='relative flex px-24 pt-24 h-full'>
+      <div className='basis-2/3'>
+        <h1 className='text-7xl font-thin'>Gabriel Burgos</h1>
+        <h4 className='text-2xl font-thin ml-1'>Full-Stack Developer</h4>
+        <div className='absolute bottom-10'>
+          {skills.map((skill, i) => <SkillIcon className='align-bottom' key={i} imgSrc={skill} />)}
         </div>
-        <div className='basis-64'>
-          { res }
-        </div>
+      </div>
+      <div className='basis-1/3'>
+        <img src={me} alt='me, who do you think'/>
+      </div>
     </div>
   );
 }
 
 export default Landing;
+

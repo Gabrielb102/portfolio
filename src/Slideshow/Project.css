@@ -1,11 +1,18 @@
 .small {
   width: 300px;
   height: 400px;
-  transition: ease-in-out 0.5s;
+}
+
+.small:hover {
+  scale: 95%;
+  box-shadow: none;
 }
 
 .large {
   width: 600px;
-  height: 800px;
-  transition: ease-in-out 0.5s;
+  height: 900px;
+}
+
+.small .card-body {
+  height: 250px;
 }
