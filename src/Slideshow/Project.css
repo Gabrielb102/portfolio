@@ -11,6 +11,7 @@
 .large {
   width: 600px;
   height: 900px;
+  overflow-y: scroll;
 }
 
 .small .card-body {

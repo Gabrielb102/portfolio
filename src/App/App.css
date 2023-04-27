@@ -31,7 +31,7 @@ body {
   }
 
 .skills {
-  background: lightgray;
+  background: #e0e0e0;
   box-shadow:  6px 6px 20px #949494,
               -6px -6px 20px #ffffff;
   transition: ease-in-out .3;  
@@ -41,6 +41,11 @@ body {
   background: lightgray;
   box-shadow:  3px 3px 8px #949494,
               -3px -3px 8px #ffffff;
+}
+
+#About {
+  box-shadow: inset 15px 15px 30px #989898,
+  inset -15px -15px 30px #ffffff;
 }
 
 #Contact {

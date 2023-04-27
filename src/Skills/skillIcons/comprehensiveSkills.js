@@ -1,4 +1,4 @@
-import javasript from './js-icon.png'
+import javascript from './js-icon.png'
 import react from './react-icon.png'
 import node from './node-icon.png'
 import python from './python-icon.png'
@@ -13,5 +13,14 @@ import leaflet from './leaflet-icon.png'
 import d3 from './d3-icon.png'
 import redis from './redis-icon.png'
 import sequelize from './sequelize-icon.png'
+import requestsCache from './requests-cache-icon.png'
+import pg from './pg-icon.png'
+import axios from './axios-icon.png'
+import daisy from './daisy-icon.png'
+import sqlAlchemy from './sqlalchemy-icon.png'
+import tailwind from './tailwind-icon.png'
+import chatEngine from './chat-engine-icon.png'
 
-export { javasript, react, python, node, express, flask, html, css, postgresql, bcrypt, jwt, sequelize, leaflet, d3, redis }
+const tech = { javascript, react, python, node, express, flask, html, css, postgresql, bcrypt, jwt, sequelize, leaflet, d3, redis, requestsCache, pg, axios, sqlAlchemy, chatEngine, tailwind, daisy }
+
+export default tech

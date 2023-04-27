@@ -1,9 +1,9 @@
 import SkillIcon from './SkillIcon';
-import { javasript, react, python, node, express, flask, html, css, postgresql, bcrypt, jwt, sequelize, leaflet, d3, redis } from './skillIcons/comprehensiveSkills';
-import './Skills.css';
+import tech from './skillIcons/comprehensiveSkills';
 
-const skills = [javasript, react, python, node, express, flask, html, css, postgresql]
-const otherSkills = [bcrypt, jwt, sequelize, leaflet, d3, redis]
+const { javascript, react, python, node, express, flask, html, css, postgresql, bcrypt, jwt, sequelize, leaflet, d3, redis, daisy, sqlAlchemy, tailwind, chatEngine, axios } = tech
+const skills = [javascript, react, python, node, express, flask, axios, html, css, postgresql]
+const otherSkills = [bcrypt, jwt, sequelize, leaflet, d3, redis, daisy, sqlAlchemy, tailwind, chatEngine]
 
 function Skills() {
 

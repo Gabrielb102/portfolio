@@ -17,7 +17,7 @@ const Contact = () => {
 
   return (
     <div className='p-16'>
-      <h2>CONTACT</h2>
+      <h2 className='font-thin'>CONTACT</h2>
       <form ref={form} onSubmit={sendEmail} id='Contact' className='form-control bg-white rounded-xl p-6 flex w-[400px] min-w-[400px] mx-auto'>
         <div className='basis-2/5 text-left pr-6'>
           <label className='label'>Name</label>

@@ -1,8 +1,9 @@
 import SkillIcon from '../Skills/SkillIcon';
 import me from '../static/floating-coffee.png';
-import { javasript, react, python, node, postgresql } from '../Skills/skillIcons/comprehensiveSkills';
+import tech from '../Skills/skillIcons/comprehensiveSkills';
 
-const skills = [javasript, react, python, node, postgresql];
+const { javascript, react, python, node, postgresql } = tech;
+const skills = [javascript, react, python, node, postgresql];
 
 function Landing() {
 
